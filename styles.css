@@ -31,7 +31,7 @@ body{
     overflow: hidden;
 }
 .display>p{
-    font-size: 2em;
+    font-size: 1.9em;
     margin: 5%;
     max-width: 80%;
 }
