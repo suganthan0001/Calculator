@@ -7,10 +7,12 @@ function ac(){
     over()
 }
 
-
 function over(){
     let resultstr =  result.toString().replace('/','÷').replace('*','×');
-    value.textContent=resultstr;
+    if(resultstr.length > 10){
+        resultstr= 'Syntax Error';
+    }
+    value.textContent=resultstr;    
 }
 
 function numbers(num){
@@ -38,3 +40,8 @@ function plusminus(){
     over()
 }
 
+function root(){
+    result = Math.sqrt(result);
+    result = result.toFixed(4);
+    over();
+}
